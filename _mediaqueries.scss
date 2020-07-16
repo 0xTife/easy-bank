@@ -1,0 +1,142 @@
+@media screen and(min-width: 1000px) {
+    body {
+        height: 100%;
+        position: absolute;
+    }
+    .container {
+        overflow-x: hidden;
+    }
+    .nav {
+        width: 100%;
+        .logo {
+            flex: 1;
+            text-align: center;
+        }
+        .nav-links {
+            flex: 2;
+            display: block;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: $Grayishblue;
+                padding: 0 10px;
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 2px solid $Grayishblue;
+                }
+            }
+        }
+        .li-btn {
+            flex: 1;
+            display: block;
+            .nav-btn {
+                width: 160px;
+                height: 40px;
+                border-radius: 20px;
+                border: none;
+                color: $white;
+                background: linear-gradient(90deg, $limegreen, $brightcyan);
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .nav-menu {
+            display: none;
+        }
+    }
+    .intro {
+        flex-direction: row-reverse;
+        padding: 0 0 0 10%;
+        .intro-img {
+            background-image: url('img/bg-intro-desktop.svg');
+            background-size: cover;
+            position: relative;
+            top: -150px;
+            .m {
+                position: relative;
+                top: 50px;
+                right: -90px;
+                z-index: 2;
+            }
+        }
+        .intro-text {
+            align-self: center;
+            justify-self: flex-start;
+            h1 {
+                text-align: left;
+                font-size: 3em;
+                padding: 1em 0;
+            }
+            p {
+                text-align: left;
+                font-size: 1em;
+                padding: 0 0 2em 0;
+            }
+            .intro-btn {
+                display: block;
+                button {
+                    width: 160px;
+                    height: 40px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .sec2 {
+        position: relative;
+        top: -180px;
+        z-index: 1;
+        height: 100%;
+        .why-us {
+            height: 100%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            padding: 0 0 0 10%;
+            grid-column-gap: 1em;
+            li {
+                text-align: left;
+                padding: 0;
+                h3 {
+                    padding: 1.5em 0 0 0;
+                }
+                p {
+                    padding: 1.5em 0;
+                }
+                &:first-child {
+                    grid-column: 1/5;
+                    grid-row: 1/2;
+                    text-align: left;
+                    h2 {
+                        font-size: 2em;
+                        padding: 3em 0 0 0;
+                        line-height: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .blog {
+        position: relative;
+        height: 700px;
+        width: 80%;
+        margin: auto;
+        h3 {
+            text-align: left;
+            padding: 0 0 2em 0;
+        }
+        ul {
+            height: 400px;
+            flex-direction: row;
+            padding: 0;
+            li {
+                margin: 0 10px 0 0;
+                .blog-post {
+                    padding: 1em;
+                }
+            }
+        }
+    }
+}

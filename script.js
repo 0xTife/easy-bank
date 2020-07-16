@@ -1,0 +1,1 @@
+const navbar = document.querrySelector('#nav-menu');

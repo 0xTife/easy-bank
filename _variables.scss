@@ -1,0 +1,17 @@
+//primary
+$darkblue: hsl(233, 26%, 24%);
+$limegreen: hsl(136, 65%, 51%);
+$brightcyan: hsl(192, 70%, 51%);
+//neutral
+$Grayishblue: hsl(233, 8%, 62%);
+$LightgrayishBlue: hsl(220, 16%, 96%);
+$Verylightgray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+@mixin blog-img($img) {
+    height: 50%;
+    background-image: url($img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
