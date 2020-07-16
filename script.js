@@ -1,5 +1,9 @@
 let navbar = document.getElementById('nav-menu-btn');
-const menu = document.querySelector('.menu');
-navbar.addEventListener('click', () => {
-    menu.style.display = 'block';
+let menu = document.querySelector('.menu');
+let container = document.querySelector('.container');
+navbar.addEventListener('click', (e) => {
+    setInterval(() => {
+        menu.style.display = 'block';
+        newnav = navbar.setAttribute('src', "img/icon-close.svg");
+    }, 500);
 });

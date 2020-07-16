@@ -28,6 +28,8 @@ body {
   border-radius: 10px;
   z-index: 4;
   display: none;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu ul {
@@ -54,10 +56,6 @@ body {
           flex: 1;
   width: 80%;
   text-align: center;
-}
-
-.menu ul li:first-child {
-  text-align: right;
 }
 
 .nav {
@@ -113,7 +111,7 @@ body {
   width: 100%;
   position: relative;
   top: -150px;
-  background-image: url("/img/image-mockups.png");
+  background-image: url("img/image-mockups.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -306,7 +304,7 @@ footer {
   background: #2d314d;
 }
 
-footer ul {
+footer div {
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,20 +318,21 @@ footer ul {
           flex-direction: column;
 }
 
-footer ul li {
+footer div ul li {
+  text-align: center;
   margin: 1em 0 0 0;
 }
 
-footer ul li:hover {
+footer div ul li:hover {
   cursor: pointer;
 }
 
-footer ul li a {
+footer div ul li a {
   text-decoration: none;
   color: #9698a6;
 }
 
-footer ul li button {
+footer div ul li button {
   width: 160px;
   height: 40px;
   border-radius: 20px;
@@ -344,7 +343,7 @@ footer ul li button {
   background: linear-gradient(90deg, #31d35c, #2bb7da);
 }
 
-footer ul .footer-social img {
+footer div .footer-social img {
   margin: 0 5px;
 }
 
@@ -512,6 +511,36 @@ footer ul .footer-social img {
   }
   .blog ul li .blog-post {
     padding: 1em;
+  }
+  footer {
+    height: 300px;
+  }
+  footer div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 300px;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer div ul {
+    padding: 1em 0 0 0;
+  }
+  footer div .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer div .footer-links ul li {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */

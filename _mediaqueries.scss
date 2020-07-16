@@ -142,4 +142,26 @@
             }
         }
     }
+    footer {
+        height: 300px;
+        div {
+            flex-direction: row;
+            height: 300px;
+            align-items: unset;
+            justify-content: space-around;
+            ul {
+                padding: 1em 0 0 0;
+            }
+            .footer-links {
+                display: flex;
+                width: 300px;
+                justify-content: space-between;
+                ul {
+                    li {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
 }

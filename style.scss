@@ -28,6 +28,7 @@ body {
     border-radius: 10px;
     z-index: 4;
     display: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1);
     ul {
         height: 100%;
         display: flex;
@@ -39,14 +40,9 @@ body {
             flex: 1;
             width: 80%;
             text-align: center;
-            &:first-child {
-                text-align: right;
-            }
         }
     }
 }
-
-.container {}
 
 .nav {
     display: flex;
@@ -81,7 +77,7 @@ body {
             width: 100%;
             position: relative;
             top: -150px;
-            background-image: url('/img/image-mockups.png');
+            background-image: url('img/image-mockups.png');
             background-repeat: no-repeat;
             background-size: contain;
         }
@@ -212,28 +208,31 @@ body {
 footer {
     height: 500px;
     background: $darkblue;
-    ul {
+    div {
         height: 500px;
         display: flex;
         align-items: center;
         flex-direction: column;
-        li {
-            margin: 1em 0 0 0;
-            &:hover {
-                cursor: pointer;
-            }
-            a {
-                text-decoration: none;
-                color: $Grayishblue;
-            }
-            button {
-                width: 160px;
-                height: 40px;
-                border-radius: 20px;
-                border: none;
-                color: $white;
-                margin: 0 auto;
-                background: linear-gradient(90deg, $limegreen, $brightcyan);
+        ul {
+            li {
+                text-align: center;
+                margin: 1em 0 0 0;
+                &:hover {
+                    cursor: pointer;
+                }
+                a {
+                    text-decoration: none;
+                    color: $Grayishblue;
+                }
+                button {
+                    width: 160px;
+                    height: 40px;
+                    border-radius: 20px;
+                    border: none;
+                    color: $white;
+                    margin: 0 auto;
+                    background: linear-gradient(90deg, $limegreen, $brightcyan);
+                }
             }
         }
         .footer-social {
