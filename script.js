@@ -1,5 +1,5 @@
-const navbar = document.querrySelector('#nav-menu');
+let navbar = document.getElementById('nav-menu-btn');
 const menu = document.querySelector('.menu');
 navbar.addEventListener('click', () => {
-    menu.style.Display = 'block';
+    menu.style.display = 'block';
 });
