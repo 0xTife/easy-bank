@@ -48,7 +48,6 @@
             }
         }
     }
-    /*
     .blog {
         height: 1500px;
         display: block;
@@ -113,8 +112,8 @@
         }
     }
     footer {
-        margin: 300px 0 0 0;
         height: 300px;
+        margin: 300px 0 0 0;
         div {
             flex-direction: row;
             height: 300px;
@@ -134,7 +133,7 @@
                 }
             }
         }
-    }*/
+    }
 }
 
 @media screen and(min-width: 1000px) {
@@ -205,6 +204,7 @@
         .intro-text {
             align-self: center;
             justify-self: flex-start;
+            z-index: 3;
             h1 {
                 text-align: left;
                 font-size: 3em;
@@ -222,7 +222,7 @@
                     width: 160px;
                     height: 40px;
                     font-size: 18px;
-                    border-radius: 10px;
+                    font-weight: normal;
                     &:hover {
                         cursor: pointer;
                     }
@@ -241,21 +241,25 @@
             grid-template-rows: repeat(2, 1fr);
             padding: 0 0 0 10%;
             grid-column-gap: 1em;
+            width: 100%;
+            padding-bottom: 3em;
             li {
                 text-align: left;
                 padding: 0;
                 h3 {
-                    padding: 1.5em 0 0 0;
+                    padding: 1em 0 0 0;
+                    font-size: 1.5em;
                 }
                 p {
-                    padding: 1.5em 0;
+                    padding: 1em 0;
+                    font-size: 1em;
                 }
                 &:first-child {
                     grid-column: 1/5;
                     grid-row: 1/2;
                     text-align: left;
                     h2 {
-                        font-size: 2em;
+                        font-size: 2.5em;
                         padding: 3em 0 0 0;
                         line-height: 1em;
                     }
@@ -269,6 +273,8 @@
         width: 80%;
         margin: auto;
         h3 {
+            font-size: 1.3em;
+            font-weight: 200;
             text-align: left;
             padding: 0 0 2em 0;
         }
@@ -277,15 +283,29 @@
             flex-direction: row;
             padding: 0;
             li {
+                flex-direction: column;
                 margin: 0 10px 0 0;
+                flex: 1;
                 .blog-post {
                     padding: 1em;
+                    sup {
+                        font-size: .7em;
+                    }
+                    h4 {
+                        padding: .5em 0;
+                        font-size: 1em;
+                        font-weight: 400;
+                    }
+                    p {
+                        font-size: .8em;
+                    }
                 }
             }
         }
     }
     footer {
         height: 300px;
+        margin: 0;
         div {
             flex-direction: row;
             height: 300px;
