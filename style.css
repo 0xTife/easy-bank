@@ -185,6 +185,7 @@ body {
 .sec2 .why-us li h2 {
   font-weight: 300;
   color: #2d314d;
+  padding: 1em 0;
 }
 
 .sec2 .why-us li p {
