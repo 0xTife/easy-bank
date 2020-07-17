@@ -8,7 +8,7 @@ $LightgrayishBlue: hsl(220, 16%, 96%);
 $Verylightgray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
 @mixin blog-img($img) {
-    height: 50%;
+    flex: 1;
     background-image: url($img);
     background-size: cover;
     background-repeat: no-repeat;

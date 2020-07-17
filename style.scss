@@ -168,6 +168,8 @@ body {
             background-color: $white;
             margin: 20px 0 0 0;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
             .blog-img1 {
                 @include blog-img('img/image-currency.jpg');
             }
@@ -186,7 +188,7 @@ body {
             }
             .blog-post {
                 padding: 1em 1em;
-                height: 50%;
+                flex: 1;
                 sup {
                     color: $Grayishblue;
                 }

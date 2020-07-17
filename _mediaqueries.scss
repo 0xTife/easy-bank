@@ -1,3 +1,64 @@
+@media screen and (min-width: 360px) {
+    .sec2 {
+        .why-us {
+            li {
+                p {
+                    padding: 1em 2em;
+                }
+            }
+        }
+    }
+    .blog {
+        ul {
+            li {
+                .blog-post {
+                    sup {
+                        padding: 2em 0;
+                    }
+                    p {
+                        font-size: .9em;
+                    }
+                    h4 {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 700px) {
+    .intro {
+        .intro-text {
+            h1 {
+                font-size: 3em;
+            }
+            p {
+                font-size: 2em;
+                padding: 2em;
+            }
+            .intro-btn {
+                button {
+                    width: 230px;
+                    height: 60px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    .blog {
+        height: 1300px;
+        ul {
+            height: 1300px;
+            li {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
 @media screen and(min-width: 1000px) {
     body {
         height: 100%;
