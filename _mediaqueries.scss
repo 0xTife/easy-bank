@@ -57,6 +57,38 @@
             }
         }
     }
+    .sec2 {
+        height: 100%;
+        .why-us {
+            height: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 1em;
+            width: 90%;
+            margin: auto;
+            li {
+                text-align: left;
+                padding: 0;
+                h3 {
+                    padding: 1.5em 0 0 0;
+                }
+                p {
+                    padding: 1.5em 0;
+                    font-size: 1.5em;
+                }
+                &:first-child {
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                    text-align: left;
+                    h2 {
+                        font-size: 2.5em;
+                        padding: 2em 0 0 0;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and(min-width: 1000px) {
