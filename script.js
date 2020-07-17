@@ -4,6 +4,6 @@ let container = document.querySelector('.container');
 navbar.addEventListener('click', (e) => {
     setInterval(() => {
         menu.style.display = 'block';
-        newnav = navbar.setAttribute('src', "img/icon-close.svg");
+        newnav = navbar.toggleAttribute('src', "img/icon-close.svg");
     }, 500);
 });
