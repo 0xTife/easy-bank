@@ -48,19 +48,39 @@
             }
         }
     }
+    /*
     .blog {
-        height: 1300px;
+        height: 1500px;
+        display: block;
+        h3 {
+            font-size: 2.5em;
+            padding: 1em 0;
+            font-weight: 600;
+        }
         ul {
-            height: 1300px;
+            height: 1500px;
             li {
                 flex-direction: row;
+                .blog-post {
+                    sup {
+                        font-size: 1.2em;
+                    }
+                    h4 {
+                        padding: .5em 0;
+                        font-size: 1.5em;
+                        font-weight: 600;
+                    }
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
             }
         }
     }
     .sec2 {
-        height: 100%;
+        height: 1400px;
         .why-us {
-            height: 100%;
+            height: auto;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(5, 1fr);
             grid-column-gap: 1em;
@@ -71,9 +91,12 @@
                 padding: 0;
                 h3 {
                     padding: 1.5em 0 0 0;
+                    font-size: 2em;
+                    font-weight: 300;
+                    padding: 1em 0;
                 }
                 p {
-                    padding: 1.5em 0;
+                    padding: 0;
                     font-size: 1.5em;
                 }
                 &:first-child {
@@ -89,6 +112,29 @@
             }
         }
     }
+    footer {
+        margin: 300px 0 0 0;
+        height: 300px;
+        div {
+            flex-direction: row;
+            height: 300px;
+            align-items: unset;
+            justify-content: space-around;
+            ul {
+                padding: 1em 0 0 0;
+            }
+            .footer-links {
+                display: flex;
+                width: 250px;
+                justify-content: space-between;
+                ul {
+                    li {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }*/
 }
 
 @media screen and(min-width: 1000px) {
@@ -171,9 +217,12 @@
             }
             .intro-btn {
                 display: block;
+                margin: 0 0 100px 0;
                 button {
                     width: 160px;
                     height: 40px;
+                    font-size: 18px;
+                    border-radius: 10px;
                     &:hover {
                         cursor: pointer;
                     }
