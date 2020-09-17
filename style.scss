@@ -9,8 +9,9 @@ ul>li {
     list-style-type: none;
 }
 
+html,
 body {
-    width: 100%;
+    width: 100vw !Important;
     height: 100%;
     font-size: 18px;
     background-color: $Verylightgray;
